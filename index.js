@@ -59,11 +59,12 @@ function decreaseQuantity() {}
 // update state
 // rerender
 
+// Rendering - approach 1: recreate the entire page each time
+
 function renderHeader() {}
 
 function renderMain() {}
 
-// approach 1: recreate the entire page each time
 // update the page
 function render() {
   // nuke the page
@@ -75,7 +76,7 @@ function render() {
   renderMain()
 }
 
-// // approach 2: recreate/update the dynamic parts
+// // Rendering - approach 2: recreate/update only the dynamic parts
 // // update the page
 // function renderStoreItems() {
 //   let storeUl = document.querySelector('.store--item-list')
